@@ -1,0 +1,1 @@
+{"units": 250, "input shape": [null, 4032], "output shape": [null, 250], "output dtype": "float32", "compute dtype": "float32", "workload": "dense", "batch_size": 32, "time": 0.05558, "power": 275.302, "memory": 0.41015625}

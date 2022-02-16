@@ -1,0 +1,1 @@
+{"filters": 2048, "kernel": [1, 1], "strides": [1, 1], "padding": "same", "dilation": [1, 1], "groups": 1, "input shape": [null, 15, 15, 512], "output shape": [null, 15, 15, 2048], "output dtype": "float32", "compute dtype": "float32", "workload": "conv2d", "data layout": "NCHW", "kernel layout": "OIHW", "batch_size": 64, "time": 6.48488, "power": 214.142, "memory": 0.548828125}
