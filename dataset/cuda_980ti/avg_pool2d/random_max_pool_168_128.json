@@ -1,0 +1,1 @@
+{"pool_size": [6, 6], "strides": [6, 6], "padding": "same", "input shape": [null, 14, 118, 2109], "output shape": [null, 19, 2, 2109], "output dtype": "float32", "compute dtype": "float32", "workload": "avg_pool2d", "strides_0": 6, "strides_1": 6, "data layout": "NCHW", "batch_size": 128, "time": 9.72756, "power": 169.71, "memory": 1.79620361328125}
