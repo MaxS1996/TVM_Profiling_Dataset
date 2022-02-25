@@ -16,6 +16,7 @@ from sklearn.svm import SVR
 from sklearn.neural_network import MLPRegressor
 from sklearn.ensemble import ExtraTreesRegressor
 import xgboost as xgb
+import tensorflow as tf
 
 from sklearn.model_selection import train_test_split
 
@@ -125,7 +126,6 @@ def create_dataframe(dataset : dict, workload_name : str):
 
     return df, output
 
-
 dataset_base = "./dataset"
 targets = os.listdir(dataset_base)
 
@@ -143,6 +143,25 @@ for target in targets:
 print("found {0} folders with samples, going to train models for each of these targets".format(len(layer_targets)))
 print()
 
+models = {
+    "xgb": xgb.XGBRegressor,
+    "ert": ExtraTreesRegressor,
+    "dTr": DecisionTreeRegressor,
+    "liR": LinearRegression,
+    "kNN": KNeighborsRegressor,
+    "SVR": SVR,
+    "MLP": MLPRegressor,
+}
+
+kwargs_dict = {
+    "xgb": None,
+    "ert": {"criterion": "squared_error", "n_estimators":150},
+    "dTr": None,
+    "liR": None,
+    "kNN": None,
+    "SVR": None,
+    "MLP": None,
+}
 
 results = {}
 for target in layer_targets:
@@ -173,49 +192,54 @@ for target in layer_targets:
         f.write(json.dumps(list(df.columns)))
 
     X_train, X_test, y_train, y_test = train_test_split(X,Y, test_size=0.2)
-    for idx, name in enumerate(labels):
-        model = xgb.XGBRegressor()
-        #model = ExtraTreesRegressor()
-        model.fit(X_train, y_train[:,idx])
+    for method, constructor in models.items():
+        for idx, name in enumerate(labels):
+            print(method)
+            if kwargs_dict[method] != None:
+                model = constructor(**kwargs_dict[method])
+            else:
+                model = constructor()
+                
+            model.fit(X_train, y_train[:,idx])
 
-        y_train_pred = model.predict(X_train)
-        y_test_pred = model.predict(X_test)
+            y_train_pred = model.predict(X_train)
+            y_test_pred = model.predict(X_test)
 
-        r2_train = r2_score(y_train[:,idx], y_train_pred)
-        r2_test = r2_score(y_test[:,idx], y_test_pred)
+            r2_train = r2_score(y_train[:,idx], y_train_pred)
+            r2_test = r2_score(y_test[:,idx], y_test_pred)
 
-        mae_train = mean_absolute_error(y_train[:,idx], y_train_pred)
-        mae_test = mean_absolute_error(y_test[:,idx], y_test_pred)
+            mae_train = mean_absolute_error(y_train[:,idx], y_train_pred)
+            mae_test = mean_absolute_error(y_test[:,idx], y_test_pred)
 
-        mape_train = mean_absolute_percentage_error(y_train[:,idx], y_train_pred)
-        mape_test = mean_absolute_percentage_error(y_test[:,idx], y_test_pred)
+            mape_train = mean_absolute_percentage_error(y_train[:,idx], y_train_pred)
+            mape_test = mean_absolute_percentage_error(y_test[:,idx], y_test_pred)
 
-        print(name)
-        print("\tR2    (train|test):\t{:.5f}\t\t{:.5f}".format(r2_train, r2_test))
-        print("\tMAE   (train|test):\t{:.5f}\t\t{:.5f}".format(mae_train, mae_test))
-        print("\tMAPE  (train|test):\t{:.5f}\t\t{:.5f}".format(mape_train, mape_test))
-        print()
-        result = {
-            "device" : device_name,
-            "workload" : workload_name,
-            "metric" : name,
-            "predictor" : "xgb",
-            "training set size": len(X_train),
-            "validation set size": len(X_test),
-            "r2_train" : r2_train,
-            "r2_test" : r2_test,
-            "mae_train" : mae_train,
-            "mae_test" : mae_test,
-            "mape_train" : mape_train,
-            "mape_test" : mape_test,
-            "minimum" : Y[:,idx].min(),
-            "maximum" : Y[:,idx].max(),
-            "mean" : Y[:,idx].mean(),
-            "median" : np.median(Y[:,idx]),
-        }
-        results[device_name+"-"+workload_name+"-"+name] = result
-        with open(date_time+"/"+device_name+"/"+workload_name+"/"+name+"_predictor.pkl", "wb") as f:
-            pickle.dump(model, f)
+            print(name)
+            print("\tR2    (train|test):\t{:.5f}\t\t{:.5f}".format(r2_train, r2_test))
+            print("\tMAE   (train|test):\t{:.5f}\t\t{:.5f}".format(mae_train, mae_test))
+            print("\tMAPE  (train|test):\t{:.5f}\t\t{:.5f}".format(mape_train, mape_test))
+            print()
+            result = {
+                "device" : device_name,
+                "workload" : workload_name,
+                "metric" : name,
+                "predictor" : method,
+                "training set size": len(X_train),
+                "validation set size": len(X_test),
+                "r2_train" : r2_train,
+                "r2_test" : r2_test,
+                "mae_train" : mae_train,
+                "mae_test" : mae_test,
+                "mape_train" : mape_train,
+                "mape_test" : mape_test,
+                "minimum" : Y[:,idx].min(),
+                "maximum" : Y[:,idx].max(),
+                "mean" : Y[:,idx].mean(),
+                "median" : np.median(Y[:,idx]),
+            }
+            results[device_name+"-"+workload_name+"-"+name+"-"+method] = result
+            with open(date_time+"/"+device_name+"/"+workload_name+"/"+name+"-"+method+"_predictor.pkl", "wb") as f:
+                pickle.dump(model, f)
 
 results = pd.DataFrame.from_dict(results, "index")
 results.to_csv(date_time+"/predictor_results.csv")
