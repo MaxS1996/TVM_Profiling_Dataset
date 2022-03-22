@@ -1,0 +1,1 @@
+{"units": 4096, "input shape": [null, 4096], "output shape": [null, 4096], "output dtype": "float32", "compute dtype": "float32", "workload": "dense", "batch_size": 32, "time": 782.467, "power": -1, "io_size": 524288, "ws_size": 16, "relay": "free_var %data: Tensor[(32, 4096), float32];\nnn.dense(%data, meta[relay.Constant][0], units=4096, out_dtype=\"float32\")\n"}
