@@ -1,0 +1,2419 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>device</th>
+      <th>workload</th>
+      <th>metric</th>
+      <th>predictor</th>
+      <th>r2</th>
+      <th>max_error</th>
+      <th>mae</th>
+      <th>mape</th>
+      <th>medae</th>
+      <th>fit_time</th>
+      <th>score_time</th>
+      <th>dataset_min</th>
+      <th>dataset_max</th>
+      <th>dataset_mean</th>
+      <th>dataset_median</th>
+      <th>dataset_size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.887646</td>
+      <td>3.874363e+02</td>
+      <td>1.647036e+01</td>
+      <td>3.706619e+00</td>
+      <td>5.503139e+00</td>
+      <td>0.322697</td>
+      <td>0.004579</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.758684</td>
+      <td>2.893369e+01</td>
+      <td>3.334399e+00</td>
+      <td>3.796683e-02</td>
+      <td>2.207453e+00</td>
+      <td>0.314725</td>
+      <td>0.004379</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>0.207918</td>
+      <td>0.004526</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.855653</td>
+      <td>3.523477e+02</td>
+      <td>1.431049e+01</td>
+      <td>7.619058e-01</td>
+      <td>3.014131e+00</td>
+      <td>0.893425</td>
+      <td>0.031941</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.655229</td>
+      <td>3.601500e+01</td>
+      <td>3.904496e+00</td>
+      <td>4.511980e-02</td>
+      <td>2.460000e+00</td>
+      <td>0.758867</td>
+      <td>0.032328</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.099300</td>
+      <td>0.012639</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.634269</td>
+      <td>6.514305e+02</td>
+      <td>2.466383e+01</td>
+      <td>7.647059e-01</td>
+      <td>4.788125e+00</td>
+      <td>0.739099</td>
+      <td>0.001557</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.550568</td>
+      <td>3.675000e+01</td>
+      <td>4.291738e+00</td>
+      <td>4.812117e-02</td>
+      <td>2.875000e+00</td>
+      <td>0.567961</td>
+      <td>0.001464</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004022</td>
+      <td>0.000898</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.289321</td>
+      <td>9.219257e+02</td>
+      <td>4.997825e+01</td>
+      <td>7.650159e+01</td>
+      <td>3.028929e+01</td>
+      <td>0.004703</td>
+      <td>0.000815</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.520456</td>
+      <td>3.887364e+01</td>
+      <td>4.969215e+00</td>
+      <td>5.619311e-02</td>
+      <td>3.761481e+00</td>
+      <td>0.005058</td>
+      <td>0.000918</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004844</td>
+      <td>0.000805</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.640881</td>
+      <td>6.002063e+02</td>
+      <td>2.568414e+01</td>
+      <td>2.943774e+00</td>
+      <td>6.564600e+00</td>
+      <td>0.006953</td>
+      <td>0.008082</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.616700</td>
+      <td>2.869339e+01</td>
+      <td>4.474584e+00</td>
+      <td>4.991359e-02</td>
+      <td>3.277584e+00</td>
+      <td>0.006814</td>
+      <td>0.007517</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.006412</td>
+      <td>0.007689</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>0.113189</td>
+      <td>8.886895e+02</td>
+      <td>3.946691e+01</td>
+      <td>1.304336e+01</td>
+      <td>9.496892e+00</td>
+      <td>0.206010</td>
+      <td>0.062332</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.564764</td>
+      <td>3.686729e+01</td>
+      <td>4.781829e+00</td>
+      <td>5.397842e-02</td>
+      <td>3.656078e+00</td>
+      <td>0.200762</td>
+      <td>0.062640</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.003969</td>
+      <td>0.000813</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.960694</td>
+      <td>1.718559e+02</td>
+      <td>7.973231e+00</td>
+      <td>2.403839e+00</td>
+      <td>2.044282e+00</td>
+      <td>10.018078</td>
+      <td>0.004205</td>
+      <td>0.005713</td>
+      <td>1238.170</td>
+      <td>52.093205</td>
+      <td>13.116100</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.762556</td>
+      <td>2.625503e+01</td>
+      <td>3.676016e+00</td>
+      <td>4.135241e-02</td>
+      <td>2.921971e+00</td>
+      <td>15.545485</td>
+      <td>0.004391</td>
+      <td>45.000000</td>
+      <td>120.000</td>
+      <td>92.348989</td>
+      <td>93.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-avg_pool2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>5.580094e-02</td>
+      <td>8.886037e-03</td>
+      <td>8.886037e-03</td>
+      <td>7.498557e-03</td>
+      <td>1.335347</td>
+      <td>0.004746</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.554452</td>
+      <td>5.866687e+03</td>
+      <td>3.382994e+01</td>
+      <td>1.851089e+01</td>
+      <td>2.649584e+00</td>
+      <td>0.333544</td>
+      <td>0.004420</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.694416</td>
+      <td>7.324202e+01</td>
+      <td>8.187328e+00</td>
+      <td>1.422883e-01</td>
+      <td>4.859106e+00</td>
+      <td>0.380814</td>
+      <td>0.004480</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>0.216413</td>
+      <td>0.004597</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.577298</td>
+      <td>4.676286e+03</td>
+      <td>3.637359e+01</td>
+      <td>1.048509e+00</td>
+      <td>9.457035e-01</td>
+      <td>0.928836</td>
+      <td>0.034628</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.630814</td>
+      <td>7.212500e+01</td>
+      <td>9.022071e+00</td>
+      <td>1.554781e-01</td>
+      <td>5.097143e+00</td>
+      <td>0.802549</td>
+      <td>0.035378</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.095379</td>
+      <td>0.012529</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.334916</td>
+      <td>4.860149e+03</td>
+      <td>3.904209e+01</td>
+      <td>9.715784e-01</td>
+      <td>1.289443e+00</td>
+      <td>1.366318</td>
+      <td>0.001445</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.475224</td>
+      <td>8.850000e+01</td>
+      <td>9.981822e+00</td>
+      <td>1.727926e-01</td>
+      <td>4.500000e+00</td>
+      <td>1.390058</td>
+      <td>0.001428</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004785</td>
+      <td>0.000925</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.244735</td>
+      <td>8.463979e+03</td>
+      <td>1.221494e+02</td>
+      <td>1.324247e+03</td>
+      <td>5.570384e+01</td>
+      <td>0.007336</td>
+      <td>0.001131</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.189922</td>
+      <td>7.349050e+01</td>
+      <td>1.473286e+01</td>
+      <td>2.570181e-01</td>
+      <td>9.003580e+00</td>
+      <td>0.007334</td>
+      <td>0.001139</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.007469</td>
+      <td>0.001112</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.104239</td>
+      <td>5.731123e+03</td>
+      <td>5.004071e+01</td>
+      <td>2.159878e+00</td>
+      <td>1.313351e+00</td>
+      <td>0.006876</td>
+      <td>0.033034</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.442752</td>
+      <td>8.445040e+01</td>
+      <td>1.176823e+01</td>
+      <td>1.954847e-01</td>
+      <td>6.698864e+00</td>
+      <td>0.006571</td>
+      <td>0.028369</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.006502</td>
+      <td>0.026733</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>0.000266</td>
+      <td>7.997505e+03</td>
+      <td>6.557424e+01</td>
+      <td>5.944943e+01</td>
+      <td>4.046733e+00</td>
+      <td>0.267009</td>
+      <td>0.082308</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.266785</td>
+      <td>7.556697e+01</td>
+      <td>1.403089e+01</td>
+      <td>2.627207e-01</td>
+      <td>8.194632e+00</td>
+      <td>0.251449</td>
+      <td>0.084299</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004696</td>
+      <td>0.000840</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.678972</td>
+      <td>4.327169e+03</td>
+      <td>4.205976e+01</td>
+      <td>8.910777e+01</td>
+      <td>5.885076e+00</td>
+      <td>7.136877</td>
+      <td>0.004509</td>
+      <td>0.000168</td>
+      <td>11383.600</td>
+      <td>67.780923</td>
+      <td>4.441990</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.596590</td>
+      <td>6.669697e+01</td>
+      <td>1.033754e+01</td>
+      <td>1.682360e-01</td>
+      <td>6.904119e+00</td>
+      <td>15.019372</td>
+      <td>0.004634</td>
+      <td>15.000000</td>
+      <td>133.000</td>
+      <td>86.794656</td>
+      <td>87.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-conv2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>7.055620e-02</td>
+      <td>8.690636e-03</td>
+      <td>8.690636e-03</td>
+      <td>6.147275e-03</td>
+      <td>1.492932</td>
+      <td>0.004618</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3331</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.661985</td>
+      <td>3.648802e+03</td>
+      <td>8.980508e+01</td>
+      <td>4.055153e+00</td>
+      <td>1.884129e+01</td>
+      <td>0.511580</td>
+      <td>0.005549</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.535255</td>
+      <td>7.449278e+01</td>
+      <td>9.074352e+00</td>
+      <td>1.371456e-01</td>
+      <td>6.664331e+00</td>
+      <td>0.555705</td>
+      <td>0.005283</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>0.255790</td>
+      <td>0.005228</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.479793</td>
+      <td>4.650286e+03</td>
+      <td>1.095665e+02</td>
+      <td>1.628505e+00</td>
+      <td>1.663372e+01</td>
+      <td>2.328718</td>
+      <td>0.163126</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.332118</td>
+      <td>7.107571e+01</td>
+      <td>1.109635e+01</td>
+      <td>1.569829e-01</td>
+      <td>8.450714e+00</td>
+      <td>2.329071</td>
+      <td>0.164778</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.104933</td>
+      <td>0.014975</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.261644</td>
+      <td>5.084206e+03</td>
+      <td>1.123574e+02</td>
+      <td>1.594463e+00</td>
+      <td>1.246640e+01</td>
+      <td>8.902906</td>
+      <td>0.002611</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>-0.008468</td>
+      <td>9.900000e+01</td>
+      <td>1.292958e+01</td>
+      <td>1.820033e-01</td>
+      <td>8.750000e+00</td>
+      <td>11.349674</td>
+      <td>0.002426</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.005267</td>
+      <td>0.001094</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.361648</td>
+      <td>4.629933e+03</td>
+      <td>1.754668e+02</td>
+      <td>1.860272e+02</td>
+      <td>9.999798e+01</td>
+      <td>0.009176</td>
+      <td>0.001341</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.223865</td>
+      <td>6.484284e+01</td>
+      <td>1.184986e+01</td>
+      <td>1.753622e-01</td>
+      <td>8.992733e+00</td>
+      <td>0.008851</td>
+      <td>0.001291</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.009083</td>
+      <td>0.001257</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.362940</td>
+      <td>4.370690e+03</td>
+      <td>1.208088e+02</td>
+      <td>1.663651e+00</td>
+      <td>1.659939e+01</td>
+      <td>0.015496</td>
+      <td>0.020339</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.183786</td>
+      <td>8.439755e+01</td>
+      <td>1.228965e+01</td>
+      <td>1.762036e-01</td>
+      <td>9.294177e+00</td>
+      <td>0.012719</td>
+      <td>0.016054</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.012768</td>
+      <td>0.016468</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>0.169204</td>
+      <td>5.453559e+03</td>
+      <td>1.151005e+02</td>
+      <td>3.415443e+00</td>
+      <td>1.681653e+01</td>
+      <td>6.453038</td>
+      <td>1.734758</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.250715</td>
+      <td>6.560052e+01</td>
+      <td>1.145769e+01</td>
+      <td>1.754492e-01</td>
+      <td>8.361432e+00</td>
+      <td>6.448518</td>
+      <td>1.748552</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.006159</td>
+      <td>0.001144</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-time-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.605472</td>
+      <td>3.050436e+03</td>
+      <td>1.040253e+02</td>
+      <td>4.045080e+00</td>
+      <td>1.795462e+01</td>
+      <td>15.844253</td>
+      <td>0.018850</td>
+      <td>0.001352</td>
+      <td>6770.030</td>
+      <td>154.934380</td>
+      <td>19.209300</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-power-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.363612</td>
+      <td>6.846373e+01</td>
+      <td>1.085131e+01</td>
+      <td>1.607873e-01</td>
+      <td>8.042429e+00</td>
+      <td>49.409422</td>
+      <td>0.028864</td>
+      <td>15.000000</td>
+      <td>135.000</td>
+      <td>85.637613</td>
+      <td>86.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dense-memory-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dense</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>5.994886e-03</td>
+      <td>9.888729e-04</td>
+      <td>9.888729e-04</td>
+      <td>7.978710e-04</td>
+      <td>5.559152</td>
+      <td>0.018894</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>17095</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.861236</td>
+      <td>1.212040e+02</td>
+      <td>9.313148e-01</td>
+      <td>2.531947e+00</td>
+      <td>1.533850e-01</td>
+      <td>0.312016</td>
+      <td>0.008278</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.634012</td>
+      <td>6.156897e+01</td>
+      <td>7.161275e+00</td>
+      <td>1.451078e-01</td>
+      <td>3.404745e+00</td>
+      <td>0.308327</td>
+      <td>0.004322</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>0.219121</td>
+      <td>0.004357</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.853042</td>
+      <td>1.400270e+02</td>
+      <td>8.781353e-01</td>
+      <td>8.062992e-01</td>
+      <td>5.720620e-02</td>
+      <td>0.968381</td>
+      <td>0.032336</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.639624</td>
+      <td>6.305643e+01</td>
+      <td>6.708374e+00</td>
+      <td>1.385009e-01</td>
+      <td>2.714286e+00</td>
+      <td>0.907885</td>
+      <td>0.035495</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.108296</td>
+      <td>0.013324</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.735593</td>
+      <td>1.382643e+02</td>
+      <td>1.726201e+00</td>
+      <td>5.899159e-01</td>
+      <td>8.064725e-02</td>
+      <td>1.172833</td>
+      <td>0.001431</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.492840</td>
+      <td>6.875000e+01</td>
+      <td>7.510708e+00</td>
+      <td>1.363222e-01</td>
+      <td>2.750000e+00</td>
+      <td>1.092116</td>
+      <td>0.001446</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004772</td>
+      <td>0.000882</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.205370</td>
+      <td>1.845986e+02</td>
+      <td>4.728912e+00</td>
+      <td>1.150512e+02</td>
+      <td>1.852203e+00</td>
+      <td>0.007120</td>
+      <td>0.001155</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.115270</td>
+      <td>6.813316e+01</td>
+      <td>1.366187e+01</td>
+      <td>2.805027e-01</td>
+      <td>1.001566e+01</td>
+      <td>0.007322</td>
+      <td>0.001117</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.007383</td>
+      <td>0.001101</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.365516</td>
+      <td>2.059713e+02</td>
+      <td>2.502196e+00</td>
+      <td>1.907475e+00</td>
+      <td>1.244254e-01</td>
+      <td>0.006183</td>
+      <td>0.028480</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.056817</td>
+      <td>8.062857e+01</td>
+      <td>1.206973e+01</td>
+      <td>2.391318e-01</td>
+      <td>6.430221e+00</td>
+      <td>0.006147</td>
+      <td>0.021905</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.006409</td>
+      <td>0.022421</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>0.149964</td>
+      <td>2.614242e+02</td>
+      <td>3.163818e+00</td>
+      <td>7.443015e+00</td>
+      <td>3.865598e-01</td>
+      <td>0.192481</td>
+      <td>0.057252</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.092706</td>
+      <td>6.644629e+01</td>
+      <td>1.207046e+01</td>
+      <td>2.720531e-01</td>
+      <td>6.704131e+00</td>
+      <td>0.200992</td>
+      <td>0.070313</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004964</td>
+      <td>0.000882</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.601351</td>
+      <td>1.971336e+02</td>
+      <td>2.745361e+00</td>
+      <td>2.581454e+01</td>
+      <td>1.018401e+00</td>
+      <td>3.928168</td>
+      <td>0.003770</td>
+      <td>0.000083</td>
+      <td>369.495</td>
+      <td>4.328829</td>
+      <td>0.345459</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.560997</td>
+      <td>5.966360e+01</td>
+      <td>8.690882e+00</td>
+      <td>1.675633e-01</td>
+      <td>5.334097e+00</td>
+      <td>15.836258</td>
+      <td>0.005238</td>
+      <td>16.000000</td>
+      <td>120.000</td>
+      <td>78.118113</td>
+      <td>83.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-depthwise_conv2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>depthwise_conv2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>8.576661e-02</td>
+      <td>5.590026e-03</td>
+      <td>5.590026e-03</td>
+      <td>3.895648e-03</td>
+      <td>1.397723</td>
+      <td>0.004756</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>3031</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.856126</td>
+      <td>4.950494e+03</td>
+      <td>3.164852e+01</td>
+      <td>5.940664e+01</td>
+      <td>3.815738e+00</td>
+      <td>0.513123</td>
+      <td>0.006560</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.687777</td>
+      <td>7.498903e+01</td>
+      <td>8.122238e+00</td>
+      <td>1.612996e-01</td>
+      <td>4.651466e+00</td>
+      <td>0.519338</td>
+      <td>0.005457</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>0.252243</td>
+      <td>0.004528</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.788388</td>
+      <td>4.641963e+03</td>
+      <td>3.499374e+01</td>
+      <td>1.501056e+01</td>
+      <td>5.897718e-01</td>
+      <td>2.919353</td>
+      <td>0.095095</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.625599</td>
+      <td>8.374571e+01</td>
+      <td>8.321785e+00</td>
+      <td>1.638906e-01</td>
+      <td>4.211429e+00</td>
+      <td>2.525901</td>
+      <td>0.087727</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.103730</td>
+      <td>0.013147</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.328961</td>
+      <td>8.381454e+03</td>
+      <td>5.482281e+01</td>
+      <td>7.088807e-01</td>
+      <td>6.789362e-01</td>
+      <td>11.104033</td>
+      <td>0.001932</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.415908</td>
+      <td>9.975000e+01</td>
+      <td>9.597786e+00</td>
+      <td>1.776865e-01</td>
+      <td>4.000000e+00</td>
+      <td>13.137251</td>
+      <td>0.001901</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.008339</td>
+      <td>0.001131</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.172393</td>
+      <td>8.121108e+03</td>
+      <td>1.446499e+02</td>
+      <td>3.570291e+03</td>
+      <td>7.049019e+01</td>
+      <td>0.013669</td>
+      <td>0.001335</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.219469</td>
+      <td>7.955610e+01</td>
+      <td>1.397892e+01</td>
+      <td>2.844553e-01</td>
+      <td>8.805878e+00</td>
+      <td>0.013999</td>
+      <td>0.001491</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.014723</td>
+      <td>0.001480</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.519181</td>
+      <td>6.188650e+03</td>
+      <td>5.538041e+01</td>
+      <td>1.416967e+01</td>
+      <td>1.701549e+00</td>
+      <td>0.008661</td>
+      <td>0.457987</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.406103</td>
+      <td>9.825496e+01</td>
+      <td>1.128523e+01</td>
+      <td>2.174780e-01</td>
+      <td>6.170854e+00</td>
+      <td>0.008201</td>
+      <td>0.460077</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.008308</td>
+      <td>0.461339</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>0.014557</td>
+      <td>1.069254e+04</td>
+      <td>9.252098e+01</td>
+      <td>6.421443e+01</td>
+      <td>5.178403e+00</td>
+      <td>2.372551</td>
+      <td>0.668489</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.301334</td>
+      <td>8.265943e+01</td>
+      <td>1.241056e+01</td>
+      <td>2.807122e-01</td>
+      <td>6.757166e+00</td>
+      <td>2.323592</td>
+      <td>0.689690</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.009410</td>
+      <td>0.001200</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.836540</td>
+      <td>4.714891e+03</td>
+      <td>4.837660e+01</td>
+      <td>4.129186e+02</td>
+      <td>1.239319e+01</td>
+      <td>13.696086</td>
+      <td>0.016650</td>
+      <td>0.000079</td>
+      <td>11876.900</td>
+      <td>94.562413</td>
+      <td>6.332960</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.575467</td>
+      <td>8.036548e+01</td>
+      <td>9.935001e+00</td>
+      <td>1.806196e-01</td>
+      <td>6.187993e+00</td>
+      <td>54.781590</td>
+      <td>0.010454</td>
+      <td>14.000000</td>
+      <td>140.000</td>
+      <td>88.124631</td>
+      <td>90.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-dilated_conv2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>dilated_conv2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>7.341577e-02</td>
+      <td>7.362858e-03</td>
+      <td>7.362858e-03</td>
+      <td>5.131239e-03</td>
+      <td>3.312400</td>
+      <td>0.010523</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>9484</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.876230</td>
+      <td>4.063460e+02</td>
+      <td>1.528658e+01</td>
+      <td>5.693365e+00</td>
+      <td>4.730538e+00</td>
+      <td>0.306725</td>
+      <td>0.008423</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.840724</td>
+      <td>2.061923e+01</td>
+      <td>3.167186e+00</td>
+      <td>3.539364e-02</td>
+      <td>2.108915e+00</td>
+      <td>0.294368</td>
+      <td>0.004352</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>0.201984</td>
+      <td>0.004190</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.855464</td>
+      <td>4.444193e+02</td>
+      <td>1.334784e+01</td>
+      <td>7.448101e-01</td>
+      <td>2.016812e+00</td>
+      <td>0.830612</td>
+      <td>0.031319</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.798591</td>
+      <td>2.551786e+01</td>
+      <td>3.396482e+00</td>
+      <td>3.816995e-02</td>
+      <td>1.975000e+00</td>
+      <td>0.694301</td>
+      <td>0.030963</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.091840</td>
+      <td>0.012353</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.668233</td>
+      <td>6.363440e+02</td>
+      <td>2.178647e+01</td>
+      <td>6.709686e-01</td>
+      <td>2.989713e+00</td>
+      <td>0.615395</td>
+      <td>0.001367</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.723220</td>
+      <td>2.937500e+01</td>
+      <td>3.741814e+00</td>
+      <td>4.207879e-02</td>
+      <td>2.000000e+00</td>
+      <td>0.530029</td>
+      <td>0.001391</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004123</td>
+      <td>0.001006</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.289101</td>
+      <td>7.958429e+02</td>
+      <td>4.404586e+01</td>
+      <td>1.514325e+02</td>
+      <td>2.776213e+01</td>
+      <td>0.005345</td>
+      <td>0.001002</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.657698</td>
+      <td>2.580557e+01</td>
+      <td>5.075935e+00</td>
+      <td>5.601092e-02</td>
+      <td>3.905304e+00</td>
+      <td>0.005016</td>
+      <td>0.000841</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.005131</td>
+      <td>0.000819</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.606966</td>
+      <td>5.487490e+02</td>
+      <td>2.232237e+01</td>
+      <td>2.637370e+00</td>
+      <td>4.507121e+00</td>
+      <td>0.006617</td>
+      <td>0.008213</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.708644</td>
+      <td>2.624103e+01</td>
+      <td>4.457790e+00</td>
+      <td>4.949929e-02</td>
+      <td>3.186422e+00</td>
+      <td>0.006291</td>
+      <td>0.007326</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.005822</td>
+      <td>0.007213</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>0.109999</td>
+      <td>9.038888e+02</td>
+      <td>3.161663e+01</td>
+      <td>5.729462e+00</td>
+      <td>6.388011e+00</td>
+      <td>0.191057</td>
+      <td>0.057918</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.677084</td>
+      <td>2.463021e+01</td>
+      <td>4.886762e+00</td>
+      <td>5.451994e-02</td>
+      <td>3.789882e+00</td>
+      <td>0.188440</td>
+      <td>0.057190</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004230</td>
+      <td>0.000913</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.949033</td>
+      <td>3.070410e+02</td>
+      <td>8.263861e+00</td>
+      <td>2.898815e+00</td>
+      <td>1.991508e+00</td>
+      <td>8.854184</td>
+      <td>0.004061</td>
+      <td>0.003696</td>
+      <td>1111.080</td>
+      <td>43.363913</td>
+      <td>8.565220</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.805230</td>
+      <td>2.043800e+01</td>
+      <td>3.741566e+00</td>
+      <td>4.146503e-02</td>
+      <td>2.941114e+00</td>
+      <td>12.815686</td>
+      <td>0.004395</td>
+      <td>65.000000</td>
+      <td>125.000</td>
+      <td>93.793158</td>
+      <td>95.000000</td>
+      <td>2821</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_E5-2680-max_pool2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_E5-2680</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>3.318986e-02</td>
+      <td>6.555951e-03</td>
+      <td>6.555951e-03</td>
+      <td>5.283541e-03</td>
+      <td>1.300994</td>
+      <td>0.004381</td>
+      <td>-1.000000</td>
+      <td>-1.000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2821</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,1222 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>device</th>
+      <th>workload</th>
+      <th>metric</th>
+      <th>predictor</th>
+      <th>r2</th>
+      <th>max_error</th>
+      <th>mae</th>
+      <th>mape</th>
+      <th>medae</th>
+      <th>fit_time</th>
+      <th>score_time</th>
+      <th>dataset_min</th>
+      <th>dataset_max</th>
+      <th>dataset_mean</th>
+      <th>dataset_median</th>
+      <th>dataset_size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.521542</td>
+      <td>1.048154e+03</td>
+      <td>4.227402e+01</td>
+      <td>3.032704e+00</td>
+      <td>6.452766e+00</td>
+      <td>1.626037</td>
+      <td>0.030065</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.825445</td>
+      <td>6.633268e+00</td>
+      <td>7.843864e-01</td>
+      <td>1.624226e-02</td>
+      <td>3.210933e-01</td>
+      <td>2.616790</td>
+      <td>0.029341</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>1.797136</td>
+      <td>0.022918</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.734136</td>
+      <td>7.564634e+02</td>
+      <td>3.501363e+01</td>
+      <td>1.315531e+00</td>
+      <td>6.931177e+00</td>
+      <td>0.248935</td>
+      <td>0.014540</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.760562</td>
+      <td>1.040680e+01</td>
+      <td>8.206375e-01</td>
+      <td>1.680432e-02</td>
+      <td>3.060491e-01</td>
+      <td>0.217906</td>
+      <td>0.016685</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.105549</td>
+      <td>0.011850</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.572537</td>
+      <td>7.226838e+02</td>
+      <td>4.410222e+01</td>
+      <td>1.341277e+00</td>
+      <td>8.301431e+00</td>
+      <td>0.022023</td>
+      <td>0.001095</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.418754</td>
+      <td>1.382719e+01</td>
+      <td>1.232059e+00</td>
+      <td>2.511524e-02</td>
+      <td>3.737573e-01</td>
+      <td>0.018966</td>
+      <td>0.001188</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.003084</td>
+      <td>0.001018</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.327250</td>
+      <td>1.109909e+03</td>
+      <td>8.083198e+01</td>
+      <td>1.979477e+02</td>
+      <td>4.281348e+01</td>
+      <td>0.004683</td>
+      <td>0.001068</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.363402</td>
+      <td>9.464265e+00</td>
+      <td>2.043768e+00</td>
+      <td>4.369087e-02</td>
+      <td>1.693146e+00</td>
+      <td>0.004452</td>
+      <td>0.000869</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.003394</td>
+      <td>0.000754</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.097833</td>
+      <td>1.196090e+03</td>
+      <td>5.233478e+01</td>
+      <td>3.901882e+00</td>
+      <td>9.020122e+00</td>
+      <td>0.002811</td>
+      <td>0.001684</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.501693</td>
+      <td>1.052637e+01</td>
+      <td>1.505092e+00</td>
+      <td>3.212929e-02</td>
+      <td>8.572930e-01</td>
+      <td>0.002911</td>
+      <td>0.001610</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.002971</td>
+      <td>0.001746</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>-0.054752</td>
+      <td>1.035039e+03</td>
+      <td>5.990738e+01</td>
+      <td>8.741663e+00</td>
+      <td>1.166889e+01</td>
+      <td>0.010847</td>
+      <td>0.003465</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.456338</td>
+      <td>1.139764e+01</td>
+      <td>1.649125e+00</td>
+      <td>3.437813e-02</td>
+      <td>1.254081e+00</td>
+      <td>0.011633</td>
+      <td>0.003367</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.003259</td>
+      <td>0.000889</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.852925</td>
+      <td>5.344285e+02</td>
+      <td>2.498858e+01</td>
+      <td>6.718116e+00</td>
+      <td>4.817359e+00</td>
+      <td>3.964369</td>
+      <td>0.002220</td>
+      <td>0.005070</td>
+      <td>1874.790000</td>
+      <td>71.161695</td>
+      <td>12.197450</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.578979</td>
+      <td>1.068626e+01</td>
+      <td>1.393645e+00</td>
+      <td>2.906246e-02</td>
+      <td>9.672198e-01</td>
+      <td>6.976544</td>
+      <td>0.002547</td>
+      <td>40.113035</td>
+      <td>60.445036</td>
+      <td>47.583829</td>
+      <td>48.192279</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-avg_pool2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>avg_pool2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>6.590522e-02</td>
+      <td>1.630063e-02</td>
+      <td>1.630063e-02</td>
+      <td>1.391430e-02</td>
+      <td>0.685919</td>
+      <td>0.002597</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.797379</td>
+      <td>1.333840e+03</td>
+      <td>2.889991e+01</td>
+      <td>2.802775e+01</td>
+      <td>5.138482e+00</td>
+      <td>2.037132</td>
+      <td>0.035445</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.954304</td>
+      <td>1.491356e+01</td>
+      <td>8.295460e-01</td>
+      <td>1.514820e-02</td>
+      <td>4.105197e-01</td>
+      <td>1.605370</td>
+      <td>0.029632</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>1.443910</td>
+      <td>0.025240</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.769516</td>
+      <td>1.755754e+03</td>
+      <td>2.410495e+01</td>
+      <td>1.318523e+00</td>
+      <td>2.102052e+00</td>
+      <td>0.786645</td>
+      <td>0.032845</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.947359</td>
+      <td>1.752013e+01</td>
+      <td>8.231936e-01</td>
+      <td>1.511318e-02</td>
+      <td>3.290525e-01</td>
+      <td>0.717274</td>
+      <td>0.031691</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.114137</td>
+      <td>0.013747</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.555836</td>
+      <td>1.491108e+03</td>
+      <td>4.098391e+01</td>
+      <td>1.462553e+00</td>
+      <td>2.410214e+00</td>
+      <td>0.723818</td>
+      <td>0.001424</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.889399</td>
+      <td>2.298345e+01</td>
+      <td>1.026883e+00</td>
+      <td>1.903137e-02</td>
+      <td>3.120984e-01</td>
+      <td>0.902801</td>
+      <td>0.001544</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004424</td>
+      <td>0.000957</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.151055</td>
+      <td>2.394185e+03</td>
+      <td>9.310621e+01</td>
+      <td>2.096172e+03</td>
+      <td>5.903542e+01</td>
+      <td>0.007362</td>
+      <td>0.001168</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.058127</td>
+      <td>2.171917e+01</td>
+      <td>5.951588e+00</td>
+      <td>1.136863e-01</td>
+      <td>5.310134e+00</td>
+      <td>0.007680</td>
+      <td>0.001221</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.007977</td>
+      <td>0.001240</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.495027</td>
+      <td>2.214625e+03</td>
+      <td>4.476663e+01</td>
+      <td>2.893434e+00</td>
+      <td>3.085995e+00</td>
+      <td>0.005736</td>
+      <td>0.025054</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.623938</td>
+      <td>2.305222e+01</td>
+      <td>2.691430e+00</td>
+      <td>5.087482e-02</td>
+      <td>1.287910e+00</td>
+      <td>0.006685</td>
+      <td>0.019526</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.007137</td>
+      <td>0.019161</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>-0.018922</td>
+      <td>2.826832e+03</td>
+      <td>6.555516e+01</td>
+      <td>1.266724e+02</td>
+      <td>9.865836e+00</td>
+      <td>0.197958</td>
+      <td>0.060183</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.127385</td>
+      <td>2.529638e+01</td>
+      <td>4.852940e+00</td>
+      <td>9.839672e-02</td>
+      <td>2.751513e+00</td>
+      <td>0.175532</td>
+      <td>0.056221</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004685</td>
+      <td>0.000844</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.850358</td>
+      <td>1.266225e+03</td>
+      <td>2.306778e+01</td>
+      <td>4.134569e+01</td>
+      <td>4.289976e+00</td>
+      <td>8.261522</td>
+      <td>0.004803</td>
+      <td>0.000260</td>
+      <td>3791.880000</td>
+      <td>75.870913</td>
+      <td>10.713450</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.656509</td>
+      <td>2.727398e+01</td>
+      <td>2.851248e+00</td>
+      <td>5.396705e-02</td>
+      <td>1.799893e+00</td>
+      <td>11.642741</td>
+      <td>0.005047</td>
+      <td>28.462768</td>
+      <td>81.882690</td>
+      <td>56.837724</td>
+      <td>59.322972</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-conv2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>conv2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>3.473693e-02</td>
+      <td>5.083737e-03</td>
+      <td>5.083737e-03</td>
+      <td>3.754863e-03</td>
+      <td>1.499615</td>
+      <td>0.004715</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>2694</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>xgb</td>
+      <td>0.770170</td>
+      <td>5.700680e+02</td>
+      <td>2.471897e+01</td>
+      <td>3.188649e+00</td>
+      <td>5.109544e+00</td>
+      <td>2.219314</td>
+      <td>0.031383</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>xgb</td>
+      <td>0.906443</td>
+      <td>7.978287e+00</td>
+      <td>5.406550e-01</td>
+      <td>1.062664e-02</td>
+      <td>2.014080e-01</td>
+      <td>1.847867</td>
+      <td>0.023551</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-xgb</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>xgb</td>
+      <td>0.000000</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>5.960464e-08</td>
+      <td>1.997587</td>
+      <td>0.024786</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>ert</td>
+      <td>0.799460</td>
+      <td>5.162115e+02</td>
+      <td>2.624428e+01</td>
+      <td>1.150892e+00</td>
+      <td>4.709509e+00</td>
+      <td>0.245285</td>
+      <td>0.017753</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>ert</td>
+      <td>0.873106</td>
+      <td>7.367816e+00</td>
+      <td>5.784646e-01</td>
+      <td>1.144195e-02</td>
+      <td>1.825566e-01</td>
+      <td>0.204126</td>
+      <td>0.014937</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-ert</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>ert</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.098485</td>
+      <td>0.013601</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>dTr</td>
+      <td>0.463725</td>
+      <td>8.975430e+02</td>
+      <td>3.893302e+01</td>
+      <td>1.008248e+00</td>
+      <td>4.505570e+00</td>
+      <td>0.018775</td>
+      <td>0.001001</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>dTr</td>
+      <td>0.716488</td>
+      <td>1.374978e+01</td>
+      <td>7.573039e-01</td>
+      <td>1.472826e-02</td>
+      <td>1.695376e-01</td>
+      <td>0.019102</td>
+      <td>0.001151</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-dTr</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>dTr</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.002784</td>
+      <td>0.000877</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>liR</td>
+      <td>0.292133</td>
+      <td>8.518708e+02</td>
+      <td>7.262648e+01</td>
+      <td>2.295691e+02</td>
+      <td>4.825609e+01</td>
+      <td>0.003186</td>
+      <td>0.000751</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>liR</td>
+      <td>0.405466</td>
+      <td>9.308340e+00</td>
+      <td>2.089570e+00</td>
+      <td>4.348360e-02</td>
+      <td>1.421991e+00</td>
+      <td>0.004429</td>
+      <td>0.000979</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-liR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>liR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004414</td>
+      <td>0.000825</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>kNN</td>
+      <td>0.309318</td>
+      <td>7.279413e+02</td>
+      <td>3.842372e+01</td>
+      <td>3.021998e+00</td>
+      <td>9.123949e+00</td>
+      <td>0.003071</td>
+      <td>0.001677</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>kNN</td>
+      <td>0.625162</td>
+      <td>8.656106e+00</td>
+      <td>1.384253e+00</td>
+      <td>2.915435e-02</td>
+      <td>6.290929e-01</td>
+      <td>0.003094</td>
+      <td>0.001645</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-kNN</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>kNN</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.003188</td>
+      <td>0.001942</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>SVR</td>
+      <td>-0.056869</td>
+      <td>1.210367e+03</td>
+      <td>5.594374e+01</td>
+      <td>4.168106e+00</td>
+      <td>6.689506e+00</td>
+      <td>0.010319</td>
+      <td>0.003222</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>SVR</td>
+      <td>0.623017</td>
+      <td>7.614951e+00</td>
+      <td>1.613871e+00</td>
+      <td>3.393752e-02</td>
+      <td>9.661827e-01</td>
+      <td>0.011424</td>
+      <td>0.003267</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-SVR</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>SVR</td>
+      <td>1.000000</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>-0.000000e+00</td>
+      <td>0.004134</td>
+      <td>0.001224</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-time-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>time</td>
+      <td>MLP</td>
+      <td>0.469585</td>
+      <td>9.983828e+02</td>
+      <td>4.039973e+01</td>
+      <td>1.573840e+01</td>
+      <td>8.807730e+00</td>
+      <td>2.348389</td>
+      <td>0.002081</td>
+      <td>0.005860</td>
+      <td>1698.620000</td>
+      <td>59.749506</td>
+      <td>9.223570</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-power-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>power</td>
+      <td>MLP</td>
+      <td>0.698718</td>
+      <td>1.107231e+01</td>
+      <td>1.396333e+00</td>
+      <td>2.809775e-02</td>
+      <td>9.484681e-01</td>
+      <td>4.185195</td>
+      <td>0.002519</td>
+      <td>40.181374</td>
+      <td>61.499461</td>
+      <td>48.791034</td>
+      <td>49.052928</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <th>llvm -mcpu=haswell_i7-4790-max_pool2d-memory-MLP</th>
+      <td>llvm -mcpu=haswell_i7-4790</td>
+      <td>max_pool2d</td>
+      <td>memory</td>
+      <td>MLP</td>
+      <td>0.000000</td>
+      <td>5.297182e-02</td>
+      <td>1.608486e-02</td>
+      <td>1.608486e-02</td>
+      <td>1.365958e-02</td>
+      <td>0.616428</td>
+      <td>0.002703</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>-1.000000</td>
+      <td>513</td>
+    </tr>
+  </tbody>
+</table>
