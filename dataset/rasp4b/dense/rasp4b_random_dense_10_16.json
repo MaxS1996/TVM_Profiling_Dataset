@@ -1,0 +1,1 @@
+{"units": 2649, "features": 20532, "input shape": [null, 20532], "output shape": [null, 2649], "output dtype": "float32", "compute dtype": "float32", "workload": "dense", "data_layout": "NCHW", "kernel_layout": "OIHW", "batch_size": 16, "io_size": 169536, "ws_size": 0, "time": 1.87425, "power": 3.87875}
